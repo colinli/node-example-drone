@@ -5,3 +5,8 @@ pipeline:
     commands:
       - npm install --development
       - npm test
+
+  publish:
+    image: plugins/npm
+    when:
+      branch: master
